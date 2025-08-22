@@ -1,5 +1,6 @@
 import Login from "./Login";
 import Browse from "./Browse";
+import MovieDetails from "./MovieDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const Body = () => {
@@ -12,11 +13,13 @@ const Body = () => {
       path: "/browse",
       element: <Browse />,
     },
+    {
+      path: "/movie/:id",
+      element: <MovieDetails />,
+    },
   ]);
-  return (
-    <>
-      <RouterProvider router={appRouter} />
-    </>
-  );
+
+  return <RouterProvider router={appRouter} />;
 };
+
 export default Body;
