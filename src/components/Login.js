@@ -104,9 +104,7 @@ const Login = () => {
           >
             {isSignIn ? "Sign In" : "Sign Up"}
           </button>
-          <p className="text-center my-2 text-gray-500 font-semibold my-2">
-            OR
-          </p>
+          <p className="text-center text-gray-500 font-semibold my-2">OR</p>
           <button className="bg-gray-500 bg-opacity-50  rounded-sm font-bold py-2 px-5 w-[90%] ">
             Use a sign-in code
           </button>
